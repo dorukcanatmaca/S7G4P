@@ -102,6 +102,7 @@ export default function Login() {
       <FormGroup>
         <Label for="exampleEmail">Email</Label>
         <Input
+          className="data-cy-mail"
           id="exampleEmail"
           name="email"
           placeholder="Enter your email"
@@ -115,6 +116,7 @@ export default function Login() {
       <FormGroup>
         <Label for="examplePassword">Password</Label>
         <Input
+          className="data-cy-pass"
           id="examplePassword"
           name="password"
           placeholder="Enter your password "
@@ -129,6 +131,7 @@ export default function Login() {
       </FormGroup>
       <FormGroup check>
         <Input
+          className="data-cy-terms"
           id="terms"
           name="terms"
           checked={form.terms}
@@ -141,7 +144,7 @@ export default function Login() {
         </Label>
       </FormGroup>
       <FormGroup className="text-center p-4">
-        <Button color="primary" disabled={!isValid}>
+        <Button className="data-cy-submit" color="primary" disabled={!isValid}>
           Sign In
         </Button>
       </FormGroup>
